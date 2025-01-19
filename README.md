@@ -126,7 +126,7 @@ $$\text{loss}=\alpha\cdot N\cdot\sum_{i=1}^{N}f_{i}\cdot P_{i}\tag{4}$$
 
 where fi is the fraction of tokens dispatched to expert i,
 
-$$f_{i}=\frac{1}{T}\sum_{x\in\mathcal{B}}1\left\{\\text{sin}(x)*{argmax}p(x)=i\right\}\tag{5}$$
+f_{i} = \frac{1}{T} \sum_{x \in \mathcal{B}} 1\left( \text{sin}(x) \cdot \arg\max p(x) = i \right)
 
 and Pi is the fraction of the router probability allocated for expert i, 2
 

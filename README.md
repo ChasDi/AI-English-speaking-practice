@@ -126,7 +126,7 @@ $$\text{loss}=\alpha\cdot N\cdot\sum_{i=1}^{N}f_{i}\cdot P_{i}\tag{4}$$
 
 where fi is the fraction of tokens dispatched to expert i,
 
-$$f_{i}=\frac{1}{T}\sum_{x\in\mathcal{B}}1\left\{\operatorname*{argmax}p(x)=i\right\}\tag{5}$$
+$$f_{i}=\frac{1}{T}\sum_{x\in\mathcal{B}}1\left\{\\text{sin}(x)*{argmax}p(x)=i\right\}\tag{5}$$
 
 and Pi is the fraction of the router probability allocated for expert i, 2
 
@@ -772,3 +772,4 @@ Figure 16: Pseudo code of the Switch Transformer layer in Mesh Tensorflow.
 - Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, and Colin Raffel. mt5: A massively multilingual pre-trained text-to-text transformer. arXiv preprint arXiv:2010.11934, 2020.
 - Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V. Le. Xlnet: Generalized autoregressive pretraining for language understanding, 2020.
 - Manzil Zaheer, Guru Guruganesh, Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big bird: Transformers for longer sequences. arXiv preprint arXiv:2007.14062, 2020.
+
